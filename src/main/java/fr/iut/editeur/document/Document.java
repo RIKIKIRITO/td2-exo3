@@ -19,12 +19,25 @@ public class Document {
     public void ajouter(String texte) {
         this.texte += texte;
     }
+    /**
+     * méthode remplacer
+     * @param debut description du premier paramètre
+     * @param fin description du second paramètre
+     * @param remplacement description du second paramètre
+     * @return null
+     */
 
     public void remplacer(int debut, int fin, String remplacement) {
         String partieGauche = texte.substring(0, debut);
         String partieDroite = texte.substring(fin + 1);
         texte = partieGauche + remplacement + partieDroite;
     }
+    /**
+     * méthode majuscules
+     * @param debut description du premier paramètre
+     * @param fin description du second paramètre
+     * @return null
+     */
 
     public void majuscules(int debut, int fin) {
         String debutTexte = texte.substring(0, debut);
